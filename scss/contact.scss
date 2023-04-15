@@ -1,0 +1,133 @@
+.contact {
+    .info-section {
+        // width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 54px;
+        .info-box {
+            position: absolute;
+            bottom: 60px;
+            h4 {
+                font-size: 1.2rem;
+                color: #fefefe;
+                margin: 0.7rem 0;
+            }
+            p {
+                font-size: 0.9rem;
+                font-weight: 300;
+                color: #fefefe;
+                margin: 0.2rem 0 1.6rem;
+                transition: all .4s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    // info-section
+    .content-area {
+        margin-left: 35%;
+        width: 65%;
+        background-color: #fefefe;
+        height: 100%;
+        // padding: 0 0 0 25%;
+        .img-container {
+            width: 30%;
+            display: inline-block;
+            position: relative;
+            height: 100%;
+            .form-section {
+                overflow-y: auto;
+                overflow-x: hidden;
+                position: absolute;
+                top: 56px;
+                left: -250px;
+                width: 500px;
+                height: calc(100% - 112px);
+                -webkit-box-shadow: 9px 2px 13px -1px rgba(103, 61, 230, 0.79);
+                box-shadow: 9px 2px 13px -1px rgba(103, 61, 230, 0.79);
+                background: #272727;
+                color: #fefefe;
+                padding: 56px 56px 0px 56px;
+                h4 {
+                    font-size: 1.3rem;
+                    margin-bottom: 4rem;
+                    margin-top: 2rem;
+                }
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 2px solid #bdbdbd;
+                    margin-bottom: 2rem;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    line-height: 1.1;
+                    color: #bdbdbd;
+                    padding: 15px 0;
+                }
+                button[type="submit"] {
+                    background: #673de6;
+                    border: none;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    width: 100%;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 30px;
+                    border-radius: 30px;
+                    text-align: center;
+                    color: azure;
+                    padding: 13px 0;
+                }
+            }
+        }
+        .contact-section {
+            width: 70%;
+            vertical-align: top;
+            display: inline-block;
+            padding: 56px;
+            // float: right;
+            .contact-infom {
+                max-width: 600px;
+                h1 {
+                    color: #272727;
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0 0 1.7rem;
+                    span {
+                        color: azure;
+                    }
+                }
+                .contact-box {
+                    width: 100%;
+                    padding: 30px;
+                    transition: all .4s ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        -webkit-box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                        box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                        -moz-box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                    }
+                    h5 {
+                        font-weight: 600;
+                        color: rgb(103, 61, 230);
+                        font-size: 1.1rem;
+                        margin: 0 0 1.5rem;
+                    }
+                    p {
+                        color: rgb(235, 232, 232);
+                        font-weight: 300;
+                        line-height: 1.4;
+                        margin: 0 0 2rem;
+                    }
+                }
+            }
+        }
+    }
+    // content-area
+} //

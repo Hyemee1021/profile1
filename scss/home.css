@@ -1,0 +1,214 @@
+.home .info-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 54px;
+}
+
+.home .info-section .info-box {
+  position: absolute;
+  bottom: 60px;
+}
+
+.home .info-section .info-box h4 {
+  font-size: 1.2rem;
+  color: #fefefe;
+  margin: 0.7rem 0;
+}
+
+.home .info-section .info-box p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #fefefe;
+  margin: 0.2rem 0 1.6rem;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.home .info-section .info-box p:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.home .content-area {
+  margin-left: 35%;
+  width: 65%;
+  background-color: #fefefe;
+  height: 100%;
+}
+
+.home .content-area .img-container {
+  width: 30%;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.home .content-area .img-container .user-img {
+  position: absolute;
+  top: 130px;
+  left: -250px;
+  width: 500px;
+  height: 70%;
+  -webkit-box-shadow: 9px 2px 13px -1px rgba(50, 31, 105, 0.79);
+  box-shadow: 9px 2px 13px -1px rgba(50, 31, 105, 0.79);
+  background: url(../img/hyemee-photo2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.home .content-area .profile-section {
+  max-width: 500px;
+  vertical-align: top;
+  display: inline-block;
+  padding: 20% 0 0;
+}
+
+.home .content-area .profile-section .profile h1 {
+  color: #272727;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1.7rem;
+}
+
+.home .content-area .profile-section .profile h1 span {
+  color: #272727;
+}
+
+.home .content-area .profile-section .profile h5 {
+  color: #673de6;
+  font-size: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.home .content-area .profile-section .profile p {
+  color: #272727;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0 0 2rem;
+}
+
+@media (max-width: 767px) {
+  .home .menu-icon {
+    top: 0;
+    right: 20px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .menu-icon .fa-bars {
+    color: white;
+  }
+  .home .info-section {
+    padding: 12px 20px;
+    position: static;
+  }
+  .home .info-section .logo {
+    height: 50px;
+    width: 70px;
+  }
+  .home .info-section .logo img {
+    width: 85%;
+  }
+  .home .info-section .info-box {
+    display: none;
+  }
+  .home .content-area {
+    margin-left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  .home .content-area .img-container {
+    padding: 56px 20px 0;
+    width: 100%;
+  }
+  .home .content-area .img-container .user-img {
+    position: static;
+    width: 100%;
+  }
+  .home .content-area .profile-section {
+    width: 90%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .content-area .profile-section .profile {
+    text-align: center;
+  }
+  .home .content-area .profile-section .profile p {
+    color: #ebe8e8;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 2rem;
+  }
+  .home .content-area .profile-section .profile a.primary-btn {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .home .content-area .img-container {
+    padding: 0;
+  }
+  .home .content-area .img-container .user-img {
+    height: 13rem;
+    top: 25%;
+    width: 13rem;
+    left: -280px;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: right;
+    padding: 20% 20px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home .content-area .img-container {
+    padding: 56px 20px 0;
+    float: left;
+  }
+  .home .content-area .img-container .user-img {
+    top: 20%;
+    left: -150px;
+    width: 18rem;
+    height: 40%;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    float: right;
+    float: left;
+    padding: 20% 20px 0;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home .content-area .img-container {
+    padding: 56px 20px 0;
+    float: left;
+  }
+  .home .content-area .profile-section {
+    width: 70%;
+    padding: 20% 60px 0;
+    float: left;
+    max-width: 800px;
+  }
+}
+/*# sourceMappingURL=home.css.map */

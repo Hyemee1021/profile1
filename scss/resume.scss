@@ -1,0 +1,167 @@
+ .resume {
+     .info-section {
+         width: 20%;
+     }
+     .content-area {
+         margin-left: 20%;
+         width: 80%;
+         background-color: #fff;
+         height: 100%;
+         overflow: hidden;
+         //  min-width: 300px;
+         .category {
+             margin-top: 1rem;
+             h1 {
+                 font-weight: 700;
+                 font-size: 2rem;
+                 text-transform: uppercase;
+                 margin-bottom: 56px;
+             }
+             .xp-section {
+                 display: grid;
+                 grid-template-columns: 1fr 1fr;
+                 column-gap: 56px;
+                 row-gap: 30px;
+                 max-width: 1000px;
+                 cursor: pointer;
+                 .xp-box {
+                     padding: 30px;
+                     transition: all .4s ease-in-out;
+                     cursor: pointer;
+                     &:hover {
+                         -webkit-box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                         box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                         -moz-box-shadow: 0px 4px 16px -2px rgba(255, 255, 112, 0.50);
+                     }
+                     h5 {
+                         font-weight: 500;
+                         font-size: 1.3rem;
+                         margin-bottom: 1.4rem;
+                     }
+                     p {
+                         font-weight: 300;
+                         font-size: 1rem;
+                         margin-bottom: 1rem;
+                     }
+                 }
+             }
+         }
+         // here to change sizes of two big background
+     }
+     // content-area
+ } // resume
+ // phone
+ @media (min-width:0px) and (max-width:767px) {
+     html,
+     body {
+         height: auto;
+         .resume {
+             .menu-icon {
+                 top: -3px;
+                 right: 20px;
+                 color: white;
+                 .fa-bars {
+                     color: white;
+                 }
+             }
+             .info-section {
+                 padding: 12px 30px;
+                 position: static;
+                 // left: 0;
+                 // bottom: 0;
+                 // top:0;
+                 // width: 35%;
+                 .logo {
+                     height: 50px;
+                     width: 70px;
+                     img {
+                         width: 85%;
+                     }
+                 }
+                 .info-box {
+                     display: none;
+                 }
+             }
+             .content-area {
+                 height: auto !important;
+                 width: 95%;
+                 margin: 0 auto;
+                 &::after {
+                     content: '';
+                     display: table;
+                     clear: both;
+                 }
+                 .scroll-section {
+                     padding: 50px 20px;
+                     width: 100%;
+                     height: auto;
+                     overflow: auto;
+                 }
+                 .category {
+                     width: 100%;
+                     .title {
+                         text-align: center;
+                         h1 {
+                             margin-bottom: 1rem;
+                         }
+                     }
+                     .xp-section {
+                         grid-template-columns: 1fr;
+                     }
+                 }
+                 // here to change sizes of two big background
+             }
+             // content-area
+         } // resume
+     } //html
+ }
+ 
+ // tablet
+ @media (min-width:768px) and (max-width:991px) {
+     .resume {
+         .info-section {
+             width: 30%;
+             padding: 56px 30px;
+             .icon-section {
+                 a {
+                     font-size: 1.4rem;
+                 }
+             }
+         }
+         .content-area {
+             height: auto;
+             width: 70%;
+             margin-left: 30%;
+             // here to change sizes of two big background
+             .category {
+                 width: 100%;
+                 .xp-section {
+                     grid-template-columns: 1fr;
+                 }
+             }
+         }
+     }
+ }
+ 
+ // laptop
+ @media (min-width:992px) and (max-width:1199px) {
+     .resume {
+         .info-section {
+             width: 30%;
+             .icon-section {
+                 a {
+                     font-size: 1.4rem;
+                 }
+             }
+         }
+         .content-area {
+             height: auto;
+             width: 70%;
+             margin-left: 30%;
+             // here to change sizes of two big background
+         }
+     }
+ }
+ 
+ // big screen
+ @media (min-width:1200px) {}
